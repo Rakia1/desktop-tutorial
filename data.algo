@@ -1,0 +1,80 @@
+// probleme 1//
+
+
+ALGORITHME éléments distincts 
+VAR
+    hs: HASH_TABLE<INTEGER,INTEGER>
+    sum :INTEGER :=0;
+    array_1 : ARRAY_OF type[i];
+    array_2 : ARRAY_OF type[j];
+BEGIN
+    FOR i FROM 0 TO array_1.length-1  DO
+    IF(hs.lookup(array_1[i]))== true THEN
+      hs.insert(array_1[i],2)  
+    ELSE
+     hs.insert(array_1[i],1)
+        
+    END_IF
+    END_FOR
+    FOR j FROM 0 TO array_2.length-1  DO
+        IF (hs.lookup(array_2[j]))==true THEN
+            hs.insert(array_2[j])=2
+        ELSE
+            h.insert(array_2[j],1)
+        END_IF
+    END_FOR
+
+    FOR i FROM 0 TO aarray_1.length-1   DO
+       IF(hs.get array_1[i]==1) THEN
+       sum:=sum+array_1[i]
+       END_IF
+       END_FOR
+
+     FOR j FROM 0 TO array_2.length-1  DO
+         (hs.get array_2[j]==1)
+  sum=sum+array_2[j]
+     END_FOR   
+    
+    END_FOR
+
+    write sum
+END
+
+
+
+
+
+
+
+//probleme 2//
+ALGORITHME éléments communs 
+VAR
+    hs: HASH_TABLE<INTEGER,INTEGER>
+    sum :INTEGER :=0;
+    array_1 : ARRAY_OF type[i];
+    array_2 : ARRAY_OF type[j];
+BEGIN
+    FOR i FROM 0 TO array_1.length-1  DO
+    IF(hs.lookup(array_1[i]))== true THEN
+      hs.insert(array_1[i],2)  
+    ELSE
+     hs.insert(array_1[i],1)
+        
+    END_IF
+    END_FOR
+    FOR j FROM 0 TO array_2.length-1  DO
+        IF (hs.lookup(array_2[j]))==true THEN
+            hs.insert(array_2[j])=2
+        ELSE
+            h.insert(array_2[j],1)
+        END_IF
+    END_FOR
+
+    FOR i FROM 0 TO aarray_1.length-1   DO
+       IF(hs.get array_1[i]==2) THEN
+       sum:=sum+array_1[i]*2
+       END_IF
+       END_FOR
+
+    write sum
+END

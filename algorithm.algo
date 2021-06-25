@@ -5,17 +5,17 @@ VAR
  v:INTEGER :=0  /* compteur des voyelles */
  m:INTEGER :=0  /* compteur de mots */  
 BEGIN
-  write(p);
-  WHILE (p!="." ) DO
+  read(p);
+  WHILE (p<>"." ) DO
+  n=n+1
     IF (p="i" or p="o"or p="a" or p="u" or p="y" or p="e") THEN
-      V=v++
-       else IF (p!=".") THEN
-         n=n++
-         else
-         m=m++
+      v=v+1
+       ELSE_IF (p=" ") THEN
+          m=m+1
+        
        END_IF
-    END_IF
+  
   END_WHILE  
-    return write("nombre de voyelles" "nombre de caractères" "nombres de mots")
+    write("nombre de voyelles" ,v "nombre de caractères",n "nombres de mots",m+1)
 
 END
